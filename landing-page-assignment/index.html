@@ -23,27 +23,30 @@
                     Start today and make up to $30/hr driving your own vehicle with Dash!
                 </p>
             </section>
+            <section>
+                <img src="images/bg-image/scooter.svg" alt="scooter" class="scooter">
+            </section>
             <section class="apply">
                 <h3>Apply Now</h3>
-                <p>Enter your info below to get started.</p>
-                <form action="applynow" method="get">
+                <p>Enter your info below.</p>
+                <form class="apply-form" action="applynow" method="get">
                     <div>
-                        <label for="firstname">First Name</label>
-                        <input type="text" id="firstname">
+                        <label for="firstname" id="label">First Name</label>
+                        <input type="text" id="firstname" placeholder="First Name">
                     </div>
                     <div>
-                        <label for="lastname">Last Name</label>
-                        <input type="text" id="lastname">
+                        <label for="lastname" id="label">Last Name</label>
+                        <input type="text" id="lastname" placeholder="Last Name">
                     </div>
                     <div>
-                        <label for="youremail">Email</label>
-                        <input type="email" id="youremail">
+                        <label for="phone" id="label">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
                     <div>
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <label for="youremail" id="label">Email</label>
+                        <input type="email" id="youremail" placeholder="Email Address">
                     </div>
-                    <div>
+                    <div id="checkbox">
                         <input type="checkbox" name="terms" id="checkbox">
                         <label for="checkbox">I agree to dash forms</label>
                     </div>
@@ -52,7 +55,7 @@
                     <a href="#">Drive with us</a>
                 </div>
                 <p>
-                Already applied? <a href="#">Check your application here</a>
+                Already applied? <a href="#" id="check">Check your application here</a>
                 </p>
             </section>
         </main>
@@ -61,14 +64,14 @@
             <p>
                 how many hours do you to drive with us this week?
             </p>
-            <form action="earn" method="get">
+            <form  class="calculate" action="earn" method="get">
                 <div>
-                    <input type="text" id="hours">
-                    <label for="hours">Hours</label>
+                    <input type="text" id="hours" placeholder="Hours">
+                    <label for="hours" id="label">Hours</label>
                 </div>
                 <div>
-                    <input type="text" id="city">
-                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="City">
+                    <label for="city" id="label">City</label>
                 </div>
                 <div class="call-to-calculate">
                     <a href="#">Calculate</a>

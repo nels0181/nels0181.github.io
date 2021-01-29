@@ -159,6 +159,8 @@ h4,
 h5 {
     font-weight: bold;
     line-height: normal;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 h1 {
     font-size: 5.063rem;
@@ -180,6 +182,10 @@ h5 {
     font-size: 1rem;
   } 
 
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 /* MOBILE STYLES */
 
 .container {
@@ -188,6 +194,72 @@ h5 {
 .logo {
     max-width: 115px;
 }
-main {
+
+/* form styling */
+.apply {
+    border-radius: 15px;
+    margin: 1.5rem 2.3rem 3rem;
+    padding: 1.5rem;
+    box-shadow: 5px 5px 20px gray;
+}
+.apply p {
+    /* margin: 0.5rem 0 0.5rem; */
+}
+#label {
+    display: none;
+}
+input[type=text],[type=email], [type=tel] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    background-color: #F4F4F5;
+    border-style: none;
+}
+#checkbox{
+    margin-bottom: 0.5rem;
+}
+
+/* call to action */
+.call-to-drive {
+    text-align: center;
+    padding: 1rem;
+    background-color: #57EEAB;
+    border-radius: 10px;
+    
+}
+.call-to-drive a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333131;
+}
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+#check {
+    color: #FF8480;
+}
+/* FOOTER */
+.site-footer {
+    background-color: #FFFD8C;
+}
+.site-footer form {
     display: flex;
 }
+/* call to action */
+.call-to-calculate {
+    text-align: center;
+    padding: 1rem;
+    background-color: #FF8480;
+    color: white;
+    border-radius: 10px;
+}
+.social svg{
+    padding: 1.5rem;
+}
+.calculate input [type=text] {
+    
