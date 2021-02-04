@@ -247,19 +247,32 @@ a:visited {
 .site-footer {
     background-color: #FFFD8C;
 }
-.site-footer form {
-    display: flex;
+/* using flex to make form fit */
+.footer-content {
+  display: grid;
+  margin: 2rem 2.3rem 2rem;
+  padding: 2rem 0 2rem;
 }
+
+/* tablet footer */
+/* @media (min-width: 1281px) {
+  .footer-content {
+    grid-template-columns: repeat(2);
+  } */
+
+
+
 /* call to action */
 .call-to-calculate {
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: #FF8480;
     color: white;
     border-radius: 10px;
 }
 .social svg{
-    padding: 1.5rem;
+    padding: 0.5rem;
 }
-.calculate input [type=text] {
-  
+/* .calculate input [type=text] {
+
+} */
