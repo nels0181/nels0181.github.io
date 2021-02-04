@@ -203,7 +203,7 @@ p {
     box-shadow: 5px 5px 20px gray;
 }
 .apply p {
-    /* margin: 0.5rem 0 0.5rem; */
+  /* margin: 0.5rem 0 0.5rem; */
 }
 #label {
     display: none;
@@ -262,4 +262,4 @@ a:visited {
     padding: 1.5rem;
 }
 .calculate input [type=text] {
-    
+  
