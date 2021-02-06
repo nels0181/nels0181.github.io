@@ -258,7 +258,7 @@ a:visited {
     color: #FF8480;
 }
 
-/* FOOTER */
+/* -------------------- FOOTER ------------------- */
 .site-footer {
     background-color: #FFFD8C;
 }
@@ -274,11 +274,11 @@ a:visited {
 .call-to-calculate a {
   text-align: center;
   text-transform: uppercase;
-  padding: 0.5rem;
+  padding: 0.4rem;
   background-color: #FF8480;
   color: white;
   border-radius: 10px;
-  width: 100%;
+  display: block;  
 }
 .social svg{
     padding: 0.5rem;
