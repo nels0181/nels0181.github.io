@@ -187,27 +187,37 @@ p {
     margin-bottom: 0.5rem;
 }
 /* MOBILE STYLES */
-
+/* centering the page contents */
 .container {
     margin: 0 auto;
 }
+
 .logo {
     max-width: 115px;
+    margin: 1.5rem 2.3rem 1.5rem;
+}
+/* margins for h1 p */
+.banner {
+  margin: 1.5rem 2.3rem 1.5rem;
+}
+/* margins for main img */
+.scooter {
+  margin: 1.5rem 2.3rem 1.5rem;
 }
 
 /* form styling */
+/* making form drop shadow & rounded corners */
 .apply {
     border-radius: 15px;
     margin: 1.5rem 2.3rem 3rem;
     padding: 1.5rem;
-    box-shadow: 5px 5px 20px gray;
+    box-shadow: 9px 15px 20px rgb(194, 191, 191);
 }
-.apply p {
-  /* margin: 0.5rem 0 0.5rem; */
-}
-#label {
+/* no labels for form items */
+.label {
     display: none;
 }
+/* styling apply now form items */
 input[type=text],[type=email], [type=tel] {
     box-sizing: border-box;
     width: 100%;
@@ -217,11 +227,12 @@ input[type=text],[type=email], [type=tel] {
     background-color: #F4F4F5;
     border-style: none;
 }
-#checkbox{
+.checkbox{
     margin-bottom: 0.5rem;
 }
 
 /* call to action */
+/* changing style of a tag to make a button with rounded corners */
 .call-to-drive {
     text-align: center;
     padding: 1rem;
@@ -234,19 +245,24 @@ input[type=text],[type=email], [type=tel] {
     font-weight: bold;
     color: #333131;
 }
+
 a,
 a:link,
 a:visited {
     color: inherit;
     text-decoration: none;
 }
+
+/* change color and hyperlink "Check application later" */
 #check {
     color: #FF8480;
 }
+
 /* FOOTER */
 .site-footer {
     background-color: #FFFD8C;
 }
+
 /* using flex to make form fit */
 .footer-content {
   display: grid;
@@ -254,25 +270,42 @@ a:visited {
   padding: 2rem 0 2rem;
 }
 
-/* tablet footer */
-/* @media (min-width: 1281px) {
-  .footer-content {
-    grid-template-columns: repeat(2);
-  } */
-
-
-
 /* call to action */
-.call-to-calculate {
-    text-align: center;
-    padding: 0.5rem;
-    background-color: #FF8480;
-    color: white;
-    border-radius: 10px;
+.call-to-calculate a {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  background-color: #FF8480;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
 }
 .social svg{
     padding: 0.5rem;
 }
-/* .calculate input [type=text] {
+/* making icons aligned with the rest of the form */
+.social {
+  display: flex;
+}
+.social svg {
+  flex-grow: 1;
+}
+/* fixing calculate button */
+.calculate {
+  display: grid;
+}
 
-} */
+
+
+
+
+
+
+/* tablet styling */
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* footer */
+  /* .calculate input[type=text],
+  .call-to-calculate a {
+ 
+  }
+}  */ 
