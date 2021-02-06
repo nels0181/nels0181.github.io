@@ -137,14 +137,16 @@ table {
 /* -----------------------------
        Custom Styles            
 -------------------------------- */
+
 html {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
+
 body {
-    line-height: 1.5;
+  line-height: 1.5;
 }
+
 *,
 *::after,
 *::before {
@@ -157,49 +159,58 @@ h2,
 h3,
 h4,
 h5 {
-    font-weight: bold;
-    line-height: normal;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  font-weight: bold;
+  line-height: normal;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
+
 h1 {
-    font-size: 5.063rem;
-  }
-  
+  font-size: 5.063rem;
+}
+
 h2 {
-    font-size: 3.375rem;
-  }
-  
+  font-size: 3.375rem;
+}
+
 h3 {
-    font-size: 2.25rem;
-  }
-  
+  font-size: 2.25rem;
+}
+
 h4 {
-    font-size: 1.5rem;
-  }
-  
+  font-size: 1.5rem;
+}
+
 h5 {
-    font-size: 1rem;
-  } 
+  font-size: 1rem;
+}
 
 p {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  font-size: 24px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
+
+::placeholder {
+  font-size: 16px;
+}
+
 /* MOBILE STYLES */
 /* centering the page contents */
 .container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .logo {
-    max-width: 115px;
-    margin: 1.5rem 2.3rem 1.5rem;
+  max-width: 115px;
+  margin: 1.5rem 2.3rem 1.5rem;
 }
+
 /* margins for h1 p */
 .banner {
   margin: 1.5rem 2.3rem 1.5rem;
 }
+
 /* margins for main img */
 .scooter {
   margin: 1.5rem 2.3rem 1.5rem;
@@ -207,60 +218,75 @@ p {
 
 /* form styling */
 /* making form drop shadow & rounded corners */
-.apply {
-    border-radius: 15px;
-    margin: 1.5rem 2.3rem 3rem;
-    padding: 1.5rem;
-    box-shadow: 9px 15px 20px rgb(194, 191, 191);
+form {
+  max-width: auto;
 }
+
+.apply {
+  border-radius: 11px;
+  margin: 1.5rem 2.3rem 3rem;
+  padding: 1.5rem;
+  box-shadow: 9px 15px 20px rgb(194, 191, 191);
+}
+
 /* no labels for form items */
 .label {
-    display: none;
+  display: none;
 }
+
 /* styling apply now form items */
-input[type=text],[type=email], [type=tel] {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 1rem;
-    border-radius: 15px;
-    background-color: #F4F4F5;
-    border-style: none;
+input[type=text],
+[type=email],
+[type=tel] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 11px;
+  background-color: #F4F4F5;
+  border-style: none;
 }
-.checkbox{
-    margin-bottom: 0.5rem;
+
+/* distance between checkbox and call-to-drive */
+.checkbox {
+  margin-bottom: 0.5rem;
+}
+
+/* increase size of checkbox */
+input[type=checkbox] {
+  transform: scale(1.75);
 }
 
 /* call to action */
 /* changing style of a tag to make a button with rounded corners */
 .call-to-drive {
-    text-align: center;
-    padding: 1rem;
-    background-color: #57EEAB;
-    border-radius: 10px;
-    
+  text-align: center;
+  padding: 1rem;
+  background-color: #57EEAB;
+  border-radius: 10px;
 }
+
 .call-to-drive a {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #333131;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333131;
 }
 
 a,
 a:link,
 a:visited {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* change color and hyperlink "Check application later" */
 #check {
-    color: #FF8480;
+  color: #FF8480;
 }
 
 /* -------------------- FOOTER ------------------- */
 .site-footer {
-    background-color: #FFFD8C;
+  background-color: #FFFD8C;
 }
 
 /* using flex to make form fit */
@@ -274,38 +300,120 @@ a:visited {
 .call-to-calculate a {
   text-align: center;
   text-transform: uppercase;
-  padding: 0.4rem;
+  font-weight: bolder;
+  padding: 0.3rem 1.5rem 0.3rem;
   background-color: #FF8480;
   color: white;
   border-radius: 10px;
-  display: block;  
+  display: block;
 }
-.social svg{
-    padding: 0.5rem;
+
+.social svg {
+  padding: 0.5rem;
 }
+
 /* making icons aligned with the rest of the form */
 .social {
   display: flex;
+  justify-content: space-evenly;
 }
-.social svg {
-  flex-grow: 1;
-}
+
 /* fixing calculate button */
 .calculate {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-
-
-
-
 /* tablet styling */
-/* @media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* footer */
-  /* .calculate input[type=text],
-  .call-to-calculate a {
- 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* change margins for tablet */
+  .logo {
+    margin: 1.5rem 5rem 3rem;
   }
-}  */ 
+
+  .banner {
+    margin: 1.5rem 5rem 3rem;
+  }
+
+  .scooter {
+    margin: 1.5rem 5rem 3rem;
+  }
+
+  .footer-content {
+    margin: 1.5rem 5rem 3rem;
+  }
+
+  .apply {
+    margin: 1.5rem 5rem 3rem;
+  }
+
+  /* footer */
+  /* changing position of form and calculate button */
+  .calculate {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .calculate div {
+    padding-right: 0.5rem;
+  }
+
+  .calculate div:nth-child(2) {
+    flex-grow: 1;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .call-to-calculate a {
+    display: block;
+  }
+}
+
+/* ----------------------
+    DESKTOP STYLES       
+--------------------- */
+@media screen and (min-width: 1024px) {
+
+  /* changing layout of footer */
+  .calculate {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .calculate div {
+    padding-right: 0.5rem;
+  }
+
+  .social {
+    justify-content: flex-end;
+  }
+
+  .call-to-calculate a {
+    display: block;
+  }
+
+  main {
+    display: flex;
+    margin: 1.5rem 8.75rem 1.5rem;
+  }
+
+  .scooter {
+    width: 33.33%
+  }
+
+  .footer-content {
+    margin: 1.5rem 8.75rem 1.5rem;
+  }
+
+
+  /* main {
+    display: flex;
+    flex-direction: row;
+
+  } */
+
+
+}
