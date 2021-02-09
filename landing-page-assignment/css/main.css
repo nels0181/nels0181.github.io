@@ -435,7 +435,9 @@ a:hover {
 
   /* changing position of sections and adding background img */
   main {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     background-image: url(/images/bg-image/scooter.svg);
     background-repeat: no-repeat;
     background-size: 86% 86%;
@@ -443,7 +445,22 @@ a:hover {
     margin-bottom: 5.5rem;
   }
 
+  /* grid column to keep banner left */
+  .banner {
+    grid-column: 1 / 2;
+  }
+
+  /* grid column to keep form right */
+  .apply {
+    grid-column: 3 / 4;
+  }
+
+
   /* REDOING FOOTER */
+  .apply {
+    justify-content: flex-end;
+  }
+
 
 
 
