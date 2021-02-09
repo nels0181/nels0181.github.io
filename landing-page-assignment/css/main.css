@@ -440,7 +440,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    background-image: url(/images/bg-image/scooter.svg);
+    background-image: url(../images/bg-image/scooter.svg);
     background-repeat: no-repeat;
     background-size: 86% 86%;
     background-position: center;
