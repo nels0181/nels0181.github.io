@@ -455,58 +455,26 @@ a:hover {
     grid-column: 3 / 4;
   }
 
-
-  /* REDOING FOOTER */
-  .apply {
-    justify-content: flex-end;
+  /* FOOTER */
+  /* repositioning footer items */
+  .footer-content {
+    display: flex;
   }
 
-
-
-
-
-  /* OLD PROGRESS */
-  /* .apply-form {
+  /* keep icons to the right */
+  .social {
     justify-content: flex-end;
-  } */
+    align-items: center;
+    flex-grow: 1;
+  }
 
-  /* FOOTER
-    .text-calculate {
-      display: flex;
-      flex-direction: column;
-      width: 35%;
-    }
+  /* changing icon order */
+  .social svg:nth-child(2) {
+    order: -2;
+  }
 
-    .calculate-form div {
-      align-self: center;
-    }
-  
-    .calculate div:nth-child(2) {
-      margin-right: 0.3rem;
-    }
-  
-    input[type=text]#hours,
-    input[type=text]#city {
-      margin-bottom: 0;
-  
-    }
-  
-    /* icons keep right */
-  /* .social {
-      display: flex;
-      flex-grow: 1;
-      justify-content: flex-end;
-      align-items: center;
-    }
-
-    /* changing icon order */
-  /* .social svg:nth-child(2) {
-      order: -2;
-    }
-
-    .social svg:nth-child(3) {
-      order: -1;
-    }
- */
+  .social svg:nth-child(3) {
+    order: -1;
+  }
 
 }
