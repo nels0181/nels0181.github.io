@@ -192,9 +192,11 @@ p {
   font-size: 16px;
 }
 
+/* =========== Custom Styles ============ */
 /* ----------------------------
             Mobile Styles 
 -------------------------------*/
+
 /* centering the page contents */
 .container {
   margin: 0 auto;
