@@ -137,10 +137,11 @@ table {
 /* -----------------------------
        Custom Styles            
 -------------------------------- */
-
+/* default font styling */
 html {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  color: #333131;
 }
 
 body {
@@ -197,7 +198,6 @@ p {
 /* centering the page contents */
 .container {
   margin: 0 auto;
-  /* width: 95%; */
 }
 
 .logo {
@@ -215,7 +215,6 @@ p {
   margin: 1.5rem 2.3rem 1.5rem;
 }
 
-
 /* styling shadow for form */
 .apply {
   background-color: white;
@@ -230,7 +229,7 @@ p {
   display: none;
 }
 
-/* styling apply now form items.  */
+/* styling apply now form input fields.  */
 input[type=text],
 [type=email],
 [type=tel] {
@@ -251,7 +250,6 @@ input[type=text],
 /* increase size of checkbox */
 input[type=checkbox] {
   transform: scale(1.75);
-
 }
 
 /* call to action */
@@ -263,13 +261,14 @@ input[type=checkbox] {
   border-radius: 0.5rem;
 }
 
+/* changing text inside the button */
 .call-to-drive a {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
   color: #333131;
   display: block;
-  border-radius: 0.5rem;
+
 }
 
 /* link styling */
@@ -295,14 +294,13 @@ a:hover {
   background-color: #FFFD8C;
 }
 
-/* using flex to make form fit */
+/* padding for footer-content to keep yellow background full width */
 .footer-content {
-  /* display: grid; */
-  /* margin: 2rem 2.3rem 2rem; */
   padding: 2rem 2.3rem 2rem;
 }
 
 /* call to action */
+/* color and look of the button */
 .call-to-calculate {
   text-align: center;
   text-transform: uppercase;
@@ -317,6 +315,7 @@ a:hover {
   box-sizing: border-box;
 }
 
+/* styling for input fields and button */
 .calculate-form {
   display: flex;
   flex-direction: row;
@@ -324,6 +323,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+/* make divs take up all available space */
 .calculate-form div {
   flex-grow: 1;
 }
@@ -343,18 +343,22 @@ a:hover {
   flex-grow: 3;
 }
 
+/* margin to keep space between input fields */
 .calculate div {
   margin-right: 0.3rem;
 }
 
+/* no margin before button */
 .calculate div:nth-child(2) {
   margin-right: 0;
 }
 
+/* padding between icons */
 .social svg {
   padding: 1rem;
 }
 
+/* button takes up 100% */
 .call-to-calculate {
   width: 100%;
 }
@@ -364,7 +368,7 @@ a:hover {
 ------------------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
-  /* change margins for tablet */
+  /* change margins for tablet for each section*/
   .logo {
     margin: 1.5rem 5rem 3rem;
   }
@@ -385,14 +389,13 @@ a:hover {
     margin: 1.6rem 5rem 3rem;
   }
 
-  /* footer */
+  /* FOOTER */
   /* changing position of form and calculate button */
   .calculate form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* margin: 0 0.5rem 0; */
   }
 
   /* overwriting margin given for apply now form inputs */
@@ -402,23 +405,17 @@ a:hover {
     padding: 0.6rem 1rem 0.6rem;
   }
 
+  /* margin to keep space between input fields */
   .calculate div {
     margin-right: 0.5rem;
   }
 
-  .calculate div:nth-child(1) {
-    /* flex-grow: 1; */
-  }
-
+  /* overwriting previous style to have space between input field and button */
   .calculate div:nth-child(2) {
-    /* flex-grow: 2; */
     margin-right: 0.5rem;
   }
 
-  .call-to-calculate {
-    width: auto;
-  }
-
+  /* changing position of icons */
   .social {
     justify-content: center;
   }
@@ -427,47 +424,8 @@ a:hover {
 /* --------------------------
       Desktop Styles       
 ---------------------------- */
-body {
-  height: max-content;
-}
 
 @media screen and (min-width: 1024px) {
-
-  .text-calculate {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-  }
-
-
-  .calculate-form div {
-    align-self: center;
-  }
-
-  .calculate div:nth-child(2) {
-    margin-right: 0.3rem;
-  }
-
-  input[type=text]#hours,
-  input[type=text]#city {
-    margin-bottom: 0;
-
-  }
-
-  /* icons keep right */
-  .social {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-
-
-  .call-to-calculate a {
-    display: block;
-    margin: 0;
-  }
 
   /* disabling img to add it as background */
   .scooter {
@@ -475,24 +433,63 @@ body {
     margin: 0;
   }
 
+  /* changing position of sections and adding background img */
   main {
     display: flex;
-    background-image: url(/landing-page-assignment/images/bg-image/scooter.svg);
+    background-image: url(/images/bg-image/scooter.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 86% 86%;
     background-position: center;
     margin-bottom: 5.5rem;
-    /* margin: 1.5rem 8.75rem 1.5rem; */
   }
 
+  /* REDOING FOOTER */
 
 
 
-  .apply-form {
+
+  /* OLD PROGRESS */
+  /* .apply-form {
     justify-content: flex-end;
-  }
+  } */
 
+  /* FOOTER
+    .text-calculate {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+    }
 
+    .calculate-form div {
+      align-self: center;
+    }
+  
+    .calculate div:nth-child(2) {
+      margin-right: 0.3rem;
+    }
+  
+    input[type=text]#hours,
+    input[type=text]#city {
+      margin-bottom: 0;
+  
+    }
+  
+    /* icons keep right */
+  /* .social {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+      align-items: center;
+    }
 
+    /* changing icon order */
+  /* .social svg:nth-child(2) {
+      order: -2;
+    }
+
+    .social svg:nth-child(3) {
+      order: -1;
+    }
+ */
 
 }
