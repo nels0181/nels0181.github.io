@@ -427,10 +427,24 @@ h4 {
         flex-direction: row;
         justify-content: space-around;
     }
-
-
-
-
-
-
 }
+
+/* ===================================
+         GALLERY STYLING 
+======================================*/
+
+/* ----- BANNER ------- */
+
+.gallery-banner {
+    margin-top: 0.5rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.7002457002457003) 0%, rgba(0, 0, 0, 0.7837837837837838) 100%), url(/images/banner-flash.svg) no-repeat;
+    background-size: cover;
+    padding: 4rem;
+}
+
+.gallery-banner h1 {
+    color: white;
+    text-align: center;
+}
+
+/* ----- DESIGNS ------ */
