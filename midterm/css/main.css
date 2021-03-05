@@ -25,16 +25,36 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: var(--black);
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: var(--orange);
+}
+
 /* ----------------------
           NAV            
 ------------------------ */
 
 /* center logo in flexbox and keep its max size */
+
+
 .logo {
-    max-width: 115px;
+    max-width: 155px;
     height: 55px;
     align-self: center;
 }
+
 
 .nav-list {
     list-style: none;
@@ -101,8 +121,6 @@ body {
     background-color: var(--black);
     transition: 0.2s;
 }
-
-
 
 
 
@@ -448,3 +466,9 @@ h4 {
 }
 
 /* ----- DESIGNS ------ */
+
+
+/* ===================================
+         CONTACT STYLING 
+======================================*/
+.contact-form {}
