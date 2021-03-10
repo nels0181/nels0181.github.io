@@ -236,9 +236,11 @@ h4 {
 
     }
 
+    /* --- HOME --- */
+
     .banner-content {
         margin-top: 3rem;
-        background-size: 10% 90;
+        background-size: 10% 90%;
         margin-bottom: 3rem;
         padding: 5rem 0 10rem 0;
         justify-items: center;
@@ -315,6 +317,32 @@ h4 {
         flex-direction: row;
         justify-content: space-around;
     }
+
+    /* ---- CONTACT ----- */
+    .contact-banner {
+        padding-top: 0;
+        background-size: cover;
+        margin-bottom: 3rem;
+        padding: 10rem 0 10rem 0;
+        justify-items: flex-start;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-content h1 {
+        box-shadow: none;
+
+    }
+
+    .contact-content {
+        background-color: white;
+    }
+
+
+
+
 }
 
 /* --------------------------------
@@ -471,4 +499,70 @@ h4 {
 /* ===================================
          CONTACT STYLING 
 ======================================*/
-.contact-form {}
+
+.social {
+    border-top: 1px solid var(--black);
+    padding-top: 1rem;
+}
+
+/* adding background img to banner */
+.contact-banner {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.7002457002457003) 0%, rgba(0, 0, 0, 0.7837837837837838) 100%), url(/images/banner-flash.svg) no-repeat;
+    padding-top: 20rem;
+    background-size: contain;
+    text-align: center;
+}
+
+
+/* styling the form to create shadow and blur */
+.contact-form {
+    /* background-color: white;
+    border-radius: 3px;
+    margin: 1.5rem 2.3rem 3rem;
+    padding: 1.5rem;
+    box-shadow: 9px 5px 20px rgb(194, 191, 191); */
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 8px 32px 0 rgba(83, 83, 83, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* styling contact form input fields */
+
+input[type=text],
+[type=email],
+[type=tel] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    background-color: #F4F4F5;
+    border-style: none;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    background-color: #F4F4F5;
+    border-style: none;
+    resize: none;
+}
+
+label {
+    display: none;
+}
+
+/* ------- LOCATION --------- */
+iframe {
+    width: 100%;
+    margin-bottom: 2rem;
+}
