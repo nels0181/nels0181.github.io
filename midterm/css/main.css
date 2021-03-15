@@ -45,6 +45,7 @@ a:active {
 /* all images are 100% */
 img {
     width: 100%;
+    height: auto;
 }
 
 /* ----------------------
@@ -119,6 +120,7 @@ img {
     background-color: white;
     border: 1px solid var(--black);
     text-align: center;
+    border-radius: 3px;
 }
 
 .btn:hover {
@@ -317,7 +319,7 @@ iframe {
     margin-top: 0.5rem;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.7002457002457003) 0%, rgba(0, 0, 0, 0.7837837837837838) 100%), url(/images/banner-flash.svg) no-repeat;
     background-size: cover;
-    padding: 4rem;
+    padding: 4em;
 }
 
 .gallery-banner h1 {
@@ -362,7 +364,6 @@ iframe {
         background: rgba(255, 255, 255, 0.10);
         box-shadow: 0 8px 32px 0 rgba(83, 83, 83, 0.37);
         backdrop-filter: blur(3.5px);
-        -webkit-backdrop-filter: blur(3.5px);
         border-radius: 3px;
         border: 1px solid rgba(255, 255, 255, 0.18);
 
@@ -485,19 +486,52 @@ iframe {
         background: rgba(255, 255, 255, 0.10);
         box-shadow: 0 8px 32px 0 rgba(83, 83, 83, 0.37);
         backdrop-filter: blur(3.5px);
-        -webkit-backdrop-filter: blur(3.5px);
         border-radius: 3px;
         border: 1px solid rgba(255, 255, 255, 0.18);
     }
 
     /* ---- GALLERY ---- */
 
-    .designs-flash {
-        display: flex;
-        justify-content: space-around;
+    /* banner new flash, fixing button width */
+    .gallery-banner {
+        text-align: center;
     }
 
+    .gallery-banner .btn {
+        display: inline-block;
+    }
 
+    /* setting up grid to make images the same size  */
+    .designs-flash {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 0.5rem;
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection img {
+        width: 60%;
+        justify-self: center;
+    }
+
+    /* gallery styling */
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .gallery img:nth-child(3) {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
 
 
 }
@@ -677,5 +711,68 @@ iframe {
     .location h2 {
         grid-column: 1 / span 2;
     }
+
+    /* ------ GALLERY ------------ */
+
+    /* fix button width, padding to make banner larger */
+    .gallery-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    /* changing background of h1 to match the glass style */
+    .gallery-banner h1 {
+        padding: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        background: rgba(255, 255, 255, 0.10);
+        box-shadow: 0 8px 32px 0 rgba(83, 83, 83, 0.37);
+        backdrop-filter: blur(3.5px);
+        border-radius: 3px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .gallery-banner .btn {
+        align-self: center;
+    }
+
+    /* setting up grid to make images the same size  */
+    .designs-flash {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 0.5rem;
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection img {
+        width: 60%;
+        justify-self: center;
+    }
+
+    /* gallery styling */
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery img:nth-child(4) {
+        display: none;
+    }
+
+
 
 }
