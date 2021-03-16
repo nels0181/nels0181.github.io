@@ -257,6 +257,7 @@ h4 {
 .contact-banner {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.7002457002457003) 0%, rgba(0, 0, 0, 0.7837837837837838) 100%), url(/midterm/images/banner-flash.svg) no-repeat;
     padding-top: 20rem;
+    background-position: 80% 80%;
     background-size: cover;
     text-align: center;
 }
@@ -339,6 +340,7 @@ iframe {
     margin-top: 0.5rem;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.7002457002457003) 0%, rgba(0, 0, 0, 0.7837837837837838) 100%), url(/midterm/images/high-def-flash-sheet.svg) no-repeat;
     background-size: 80%;
+    background-position: 80% 80%;
 }
 
 .gallery-content {
