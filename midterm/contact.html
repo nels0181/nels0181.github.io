@@ -39,7 +39,7 @@
 
         <main>
             <div class="contact-banner">
-                <div class="contact-content">
+                <div class="container contact-content">
                     <h1>Let's talk! <i class="im im-smiley-o"></i></h1>
                     <h3>Reach out to me if you have any questions or want to book a consultation. </h3>
                     <div class="social">
@@ -53,35 +53,36 @@
                             <i class="im im-calendar"></i>
                         </p>
                     </div>
+                    <form class="contact-form" action="contact" method="get">
+                        <div>
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" placeholder="First Name">
+                        </div>
+                        <div>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" placeholder="Last Name">
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Phone number"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </div>
+                        <div>
+                            <label for="youremail">Email</label>
+                            <input type="email" id="youremail" placeholder="Email Address">
+                        </div>
+                        <div>
+                            <label for="message">Your message</label>
+                            <textarea name="message" id="message" placeholder="Your message"></textarea>
+                        </div>
+                        <div>
+                            <label for="submit"></label>
+                            <a href="#" class="btn-form">Send</a>
+                        </div>
+                    </form>
                 </div>
-                <form class="contact-form" action="contact" method="get">
-                    <div>
-                        <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" placeholder="First Name">
-                    </div>
-                    <div>
-                        <label for="lastname">Last Name</label>
-                        <input type="text" id="lastname" placeholder="Last Name">
-                    </div>
-                    <div>
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                    </div>
-                    <div>
-                        <label for="youremail">Email</label>
-                        <input type="email" id="youremail" placeholder="Email Address">
-                    </div>
-                    <div>
-                        <label for="message">Your message</label>
-                        <textarea name="message" id="message" placeholder="Your message"></textarea>
-                    </div>
-                    <div>
-                        <label for="submit"></label>
-                        <a href="#" class="btn-form">Send</a>
-                    </div>
-                </form>
             </div>
-            <section class="location">
+            <section class="container location">
                 <h2>Studio location</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione quibusdam fuga aut
                     impedit
@@ -94,12 +95,10 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
             </section>
-
-
         </main>
         <!-- FOOTER -->
         <footer class="site-footer">
-            <div class="footer-content">
+            <div class="container footer-content">
                 <div class="column-1">
                     <h4>SITE MAP</h4>
                     <ul>
