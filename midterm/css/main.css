@@ -179,12 +179,10 @@ img {
 @keyframes fade {
     from {
         fill: var(--black);
-        transform: scale (1.5);
     }
 
     to {
         fill: var(--orange);
-        transform: scale (1.5);
     }
 }
 
