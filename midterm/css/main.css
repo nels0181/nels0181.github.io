@@ -31,6 +31,10 @@ body {
     line-height: 1.5;
 }
 
+ul {
+    padding-left: 0;
+}
+
 *,
 *::after,
 *::before {
