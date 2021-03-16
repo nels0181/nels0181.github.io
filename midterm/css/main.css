@@ -31,9 +31,6 @@ body {
     line-height: 1.5;
 }
 
-ul {
-    padding-left: 0;
-}
 
 *,
 *::after,
@@ -211,6 +208,11 @@ img {
 .footer-content li {
     display: block;
     padding: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 .footer-content a {
