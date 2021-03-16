@@ -214,21 +214,18 @@ img {
     text-decoration: none;
 }
 
-/* ul {
-    list-style: none;
-    padding-left: 0;
-} */
-
 .icons-footer svg {
     fill: white;
     padding: 0.5rem;
 }
 
+/* flex required to have footer content in a column for mobile */
 .footer-content {
     display: flex;
     flex-direction: column;
 }
 
+/* add font weight to differentiate h4 from p */
 h4 {
     font-weight: 400;
 }
@@ -241,12 +238,13 @@ h4 {
     padding: 1rem;
 }
 
+/* visual styling to separate content */
 .social {
     border-top: 1px solid var(--black);
     padding-top: 1rem;
 }
 
-/* adding background img to banner */
+/* adding background img to banner and gradient for readability */
 .contact-banner {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.7002457002457003) 0%, rgba(0, 0, 0, 0.7837837837837838) 100%), url(/midterm/images/banner-flash.svg) no-repeat;
     padding-top: 20rem;
@@ -263,6 +261,7 @@ h3 {
 
 
 /* styling the form to create shadow and blur */
+/* padding required to make form stand out */
 .contact-form {
     background: rgba(255, 255, 255, 0.10);
     box-shadow: 0 8px 32px 0 rgba(83, 83, 83, 0.37);
@@ -274,7 +273,6 @@ h3 {
 }
 
 /* styling contact form input fields */
-
 input[type=text],
 [type=email],
 [type=tel] {
@@ -304,10 +302,12 @@ textarea {
     font-family: 'Roboto', sans-serif;
 }
 
+/* stop labels from displaying, placeholder serves the purpose instead */
 label {
     display: none;
 }
 
+/* additional styling for submit form button, smaller size, different color */
 .btn-form {
     border-radius: 3px;
     background-color: var(--orange);
@@ -327,6 +327,7 @@ iframe {
 
 /* ----- BANNER ------- */
 
+/* setting up banner: graphics and gradient to improve readability */
 .gallery-banner {
     margin-top: 0.5rem;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.7002457002457003) 0%, rgba(0, 0, 0, 0.7837837837837838) 100%), url(/midterm/images/high-def-flash-sheet.svg) no-repeat;
@@ -338,11 +339,12 @@ iframe {
     padding: 4em;
 }
 
+/* add extra space to improve visual look */
 .glr a {
     margin-bottom: 3rem;
 }
 
-
+/* color change required for readability */
 .gallery-banner h1 {
     color: white;
     text-align: center;
@@ -351,6 +353,8 @@ iframe {
 /* ----- Merch ------ */
 
 /* ----- ANIMATION ----- */
+
+/* animation to draw attention to the user */
 .collection img {
     max-width: 100%;
     animation: rotation 4s infinite ease-in-out alternate;
@@ -442,6 +446,8 @@ iframe {
     }
 
     /* ----- store ----- */
+
+    /* repositioning background for TABLET view */
     .store-banner {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -484,6 +490,8 @@ iframe {
 
 
     /* ------- footer -------- */
+
+    /* changing footer style for TABLET & DESKTOP */
     .footer-content {
         padding-top: 5%;
         flex-direction: row;
@@ -491,6 +499,8 @@ iframe {
     }
 
     /* ---- CONTACT ----- */
+
+    /* reorganizing content for TABLET */
     .contact-content {
         padding-top: 0;
         background-size: cover;
@@ -557,6 +567,7 @@ iframe {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* img required to be scaled down */
     .collection img {
         width: 60%;
         justify-self: center;
@@ -644,6 +655,8 @@ iframe {
     }
 
     /* ----- store ----- */
+
+    /* repositioning background img for DESKTOP, overwrite padding */
     .store-banner {
         padding-left: 0;
         padding-right: 0;
@@ -697,6 +710,8 @@ iframe {
 
 
     /* ------- footer -------- */
+
+    /* changing footer style for TABLET & DESKTOP */
     .footer-content {
         padding-top: 5%;
         flex-direction: row;
@@ -818,6 +833,7 @@ iframe {
 
     /* gallery styling */
 
+    /* grid set up for DESKTOP view using grid */
     .gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -829,11 +845,8 @@ iframe {
         height: 100%;
     }
 
+    /* remove last image for stylistic choices in DESKTOP */
     .gallery img:nth-child(4) {
         display: none;
     }
-
-
-
-
 }
