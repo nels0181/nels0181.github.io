@@ -187,19 +187,12 @@ img {
     }
 }
 
-/* ----------------------
-         STYLE         
------------------------- */
-
-
-/* .style img {
-    width: 100%;
-} */
 
 /* ----------------------
          FOOTER         
 ------------------------ */
 
+/* setting background for bleed out edges */
 .site-footer {
     background-color: var(--black);
 }
@@ -210,6 +203,7 @@ img {
     text-align: center;
 }
 
+/* make links full width */
 .footer-content li {
     display: block;
     padding: 0.5rem;
@@ -220,10 +214,10 @@ img {
     text-decoration: none;
 }
 
-ul {
+/* ul {
     list-style: none;
     padding-left: 0;
-}
+} */
 
 .icons-footer svg {
     fill: white;
