@@ -620,7 +620,7 @@ iframe {
     /* left position for banner content */
     .banner-content {
         margin-top: 3rem;
-        background-size: 10% 90;
+        background-size: 10% 90%;
         background-position: center right;
         margin-bottom: 3rem;
         padding: 5rem 0 10rem 0;
