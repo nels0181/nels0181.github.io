@@ -53,6 +53,9 @@ a:visited {
 
 a:hover {
     color: white;
+    box-shadow: 0 8px 32px 0 rgba(83, 83, 83, 0.37);
+    backdrop-filter: blur(3.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 a:active {
@@ -334,7 +337,7 @@ iframe {
 
 .gallery-banner {
     margin-top: 0.5rem;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.7002457002457003) 0%, rgba(0, 0, 0, 0.7837837837837838) 100%), url(/images/banner-flash.svg) no-repeat;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.7002457002457003) 0%, rgba(0, 0, 0, 0.7837837837837838) 100%), url(/midterm/images/banner-flash.svg) no-repeat;
     background-size: cover;
 }
 
