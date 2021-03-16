@@ -38,10 +38,13 @@ body {
     line-height: inherit;
 }
 
+/* center entire page */
 .wrapper {
     margin: 0 auto;
 }
 
+
+/* styling links in different states*/
 a {
     text-decoration: none;
 }
@@ -53,9 +56,6 @@ a:visited {
 
 a:hover {
     color: white;
-    box-shadow: 0 8px 32px 0 rgba(83, 83, 83, 0.37);
-    backdrop-filter: blur(3.5px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 a:active {
@@ -64,7 +64,7 @@ a:active {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-/* all images are 100% */
+/* making images responsive */
 img {
     width: 100%;
     height: auto;
@@ -75,21 +75,22 @@ img {
 ------------------------ */
 
 /* center logo in flexbox and keep its max size */
-
+/* settinf default size for the logo*/
 .logo {
     max-width: 155px;
-    height: 55px;
+    height: auto;
     align-self: center;
     padding-top: 1em;
 }
 
+/* remove default list styles */
 .nav-list {
     list-style: none;
     text-align: center;
-    /* remove default padding */
     padding-left: 0;
 }
 
+/* make links full width for mobile */
 .nav-list li {
     display: block;
     padding: 1rem;
@@ -151,18 +152,18 @@ img {
 }
 
 
-
 /* ----------------------
          ABOUT         
 ------------------------ */
 
-
+/* setting background for banner */
 .store-banner {
     background: url(../images/citymonster-cropped.jpg) no-repeat;
     background-size: cover;
     padding: 4rem;
 }
 
+/* ANIMATION FOR SVG */
 
 /* Animation to change colors of the image */
 .sign {
@@ -186,16 +187,14 @@ img {
     }
 }
 
-/* ANIMATION FOR SVG */
-
 /* ----------------------
          STYLE         
 ------------------------ */
-.style img {
+
+
+/* .style img {
     width: 100%;
-}
-
-
+} */
 
 /* ----------------------
          FOOTER         
