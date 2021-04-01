@@ -15,6 +15,7 @@
 
 <body>
     <header>
+        <!-- nav -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
@@ -26,13 +27,13 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Our team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
 
                     </ul>
@@ -41,15 +42,31 @@
         </nav>
 
     </header>
+    <!-- banner -->
     <div class="p-5 text-center bg-light mt-4">
         <div class="container">
             <h1 class="mb-3">Introducing Bootstrap</h1>
             <h4 class="mb-3"></h4>
-            <a class="btn btn-primary" href="" role="button">Call to action</a>
+            <a class="btn btn-primary" href="#" role="button">Learn more</a>
         </div>
     </div>
     <div class="container">
-
+        <h2>Navbar</h2>
+        <p>Bootstrap offers a navbar component that is responsive and fluid by default. The navbar can be adjusted in
+            any way you want, but by default, the links hide in a hamburger menu for tablet and mobile. The default
+            template includes drop down menus, but I am personally not a big fan of them, unless they are absolutely
+            necessary to accomodate a lot of content. I also made the navbar stick to the top, so a user can easily move
+            to different pages.
+        </p>
+        <hr>
+        <h2>Banner</h2>
+        <p>I created a simple banner with a Bootstrap preset color and wrapped the banner content in the container. I
+            used a bootstrap button component in primary style to use it as a call-to-action. Buttons come in different
+            styles that serve their own semantic values, and there are also dark, light, and link styles.
+        </p>
+        <p>Some Bootstrap components require additional margins, so I added them where needed.
+        </p>
+        <!-- alert -->
         <div class="alert alert-warning mt-4" role="alert">
             Warning! Boodstrap will make your life easier!
         </div>
@@ -58,79 +75,89 @@
             is universally conveyed as a warning color, where red is considered danger.</p>
         <hr>
         <h2>Cards Component</h2>
-        <p>Card are a convenient component </p>
+        <p>Card are a convenient component to display a gallery and provide previews. Like most components in Bootstrap,
+            cards use flexbox. Bootstrap uses a 12 column grid, so you can easily adjust how many cards you want to be
+            displayed in a row depending on the screen size. On mobile, I used 1 column to display cards, 2 columns for
+            tablet, and 3 on desktop.</p>
+        <hr>
+        <p>I customized the cards to add rounded corners and a shadow. The shadow styles are also a part of Bootstrap
+            presets, so they don't require additional CSS, which is super convenient. I also chose the outline style for
+            buttons inside the cards to create visual hierarchy with the main call-to-action buttons.</p>
         <!-- CARDS -->
         <div class="row mt-4">
-            <!-- card # -->
+            <!-- card #1 -->
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                 <div class="card shadow p-3 mb-5 bg-body rounded bg-dark">
                     <img src="http://via.placeholder.com/300x200" alt="placeholder">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <!-- card # -->
+            <!-- card #2 -->
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                 <div class="card shadow p-3 mb-5 bg-body rounded">
                     <img src="http://via.placeholder.com/300x200" alt="placeholder">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <!-- card # -->
+            <!-- card #3 -->
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                 <div class="card shadow p-3 mb-5 bg-body rounded">
                     <img src="http://via.placeholder.com/300x200" alt="placeholder">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <!-- card # -->
+            <!-- card #4 -->
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                 <div class="card shadow p-3 mb-5 bg-body rounded">
                     <img src="http://via.placeholder.com/300x200" alt="placeholder">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <!-- card # -->
+            <!-- card #5 -->
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                 <div class="card shadow p-3 mb-5 bg-body rounded">
                     <img src="http://via.placeholder.com/300x200" alt="placeholder">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <!-- card # -->
+            <!-- card #6 -->
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                 <div class="card shadow p-3 mb-5 bg-body rounded">
                     <img src="http://via.placeholder.com/300x200" alt="placeholder">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- form -->
         <h2>Form Component</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quidem officiis, fuga sunt autem quas quam
-            esse debitis. Quae optio debitis ex corrupti illo obcaecati harum facere praesentium rerum expedita?</p>
+        <p>I'm personally not a big fan of forms and find them annoying to customize. Bootstrap offers a variety of
+            forms, but I chose a standard contact form. It is full width by default, and since I put all content in a
+            container, it always looks good regardless of the screen size. However, I noticed that if you use textarea,
+            Bootstrap doesn't restrict resizing, so you need additional CSS to change that. </p>
         <form class="mb-4">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -142,17 +169,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-
-
-
-
-
-
-
-
     </div>
-
-
 
     </div>
     <!-- Footer -->
@@ -164,30 +181,28 @@
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-6 mb-4 mb-md-0 text-md-start">
                     <h5 class="text-uppercase">Footer Content</h5>
-
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                        voluptatem veniam, est atque cumque eum delectus sint!
+                        This is a Bootstrap footer template that includes a header, a paragraph, and an unordered list
+                        of links used for a site map. It also has a separate div for the copyright line. For mobile
+                        screens footer content and site map are in 1 column, in tablet they take up equal space side by
+                        side and the links are aligned to the end. The footer content is also in a container to match
+                        the page content.
                     </p>
                 </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-6 mb-4 mb-md-0 text-md-end">
-                    <h5 class="text-uppercase mb-0">Links</h5>
+                    <h5 class="text-uppercase mb-0">Site Map</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!" class="text-dark">Link 1</a>
+                            <a href="#!" class="text-dark">About</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-dark">Link 2</a>
+                            <a href="#!" class="text-dark">Our team</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-dark">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-dark">Link 4</a>
+                            <a href="#!" class="text-dark">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -205,11 +220,6 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-
-
-
-
-
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
