@@ -1,4 +1,34 @@
 :root {
     --green: #9AF5A0;
     --yellow: #FCFF7B;
+    --gray: #EFEFEF;
+}
+
+body {
+    background: var(--gray);
+}
+
+/* html,
+body,
+header,
+#intro {
+    height: 100%;
+} */
+
+#intro {
+    background: url(/images/bg-shapes.png) no-repeat top center fixed;
+    background-size: contain;
+}
+
+.my-photo {
+    max-width: 90%;
+}
+
+.about-me {
+    border-top: solid 6px var(--yellow);
+}
+
+
+textarea {
+    resize: none;
 }
