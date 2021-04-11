@@ -1,34 +1,76 @@
+body {
+    font-family: 'Krub', sans-serif;
+}
+
 :root {
-    --green: #9AF5A0;
-    --yellow: #FCFF7B;
+    --green: #94EB9A;
+    --yellow: #FFFF66;
     --gray: #EFEFEF;
+    --darkergreen: #89D98E;
+    --darkeryellow: #EDED64;
 }
 
 body {
     background: var(--gray);
 }
 
-/* html,
-body,
-header,
-#intro {
-    height: 100%;
-} */
+/* button-primary overwrite */
+.btn-primary {
+    background: var(--green);
+    border: none;
+}
+
+.logo {
+    max-height: 100px;
+    margin: 0.5rem;
+}
+
+
+
+
+.card-body {
+    border-top: 3px solid var(--gray);
+}
+
+
+
 
 #intro {
     background: url(/images/bg-shapes.png) no-repeat top center fixed;
-    background-size: contain;
+    background-size: cover;
 }
 
+
+
 .my-photo {
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .about-me {
     border-top: solid 6px var(--yellow);
 }
 
+/* card tag */
+.card-tags-1 {
+    background: var(--green);
+    border-radius: 3px;
 
+}
+
+.card-tags-2 {
+    background: var(--yellow);
+    border-radius: 3px;
+
+}
+
+
+/* contact */
 textarea {
     resize: none;
+}
+
+.contact-icon {
+    width: 100px;
+    padding: 0.5rem;
+
 }
