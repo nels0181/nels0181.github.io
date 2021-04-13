@@ -26,14 +26,20 @@ body {
     margin: 0.5rem;
 }
 
-
-
-
 .card-body {
     border-top: 3px solid var(--gray);
 }
 
 
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    background: white;
+    height: 15rem;
+}
 
 
 #intro {
