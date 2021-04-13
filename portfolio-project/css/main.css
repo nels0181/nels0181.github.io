@@ -8,6 +8,7 @@ body {
     --gray: #EFEFEF;
     --darkergreen: #89D98E;
     --darkeryellow: #EDED64;
+    /* --bs-primary */
 }
 
 body {
@@ -36,7 +37,7 @@ body {
 
 
 #intro {
-    background: url(images/bg-shapes.png) no-repeat top center fixed;
+    background: url(../images/bg-shapes.png) no-repeat top center fixed;
     background-size: cover;
 }
 
