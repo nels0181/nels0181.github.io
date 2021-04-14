@@ -51,7 +51,7 @@ img {
     border-radius: 5px;
     background: #E3E3E3;
     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
-    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12);
     cursor: pointer;
 }
 
@@ -62,7 +62,7 @@ img {
 
 .card-body {
     border-top: 1px solid var(--gray);
-    height: 12rem;
+    height: 13rem;
 }
 
 
@@ -89,7 +89,7 @@ img {
 }
 
 
-/* contact */
+/* contact form - prevent resizing */
 textarea {
     resize: none;
 }
