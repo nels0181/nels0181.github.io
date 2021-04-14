@@ -14,7 +14,7 @@ body {
     background: var(--gray);
 }
 
-
+/* making sure all img are responsive */
 img {
     max-width: 100%;
     height: 0 auto;
