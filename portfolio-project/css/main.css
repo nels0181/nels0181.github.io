@@ -8,15 +8,20 @@ body {
     --gray: #EFEFEF;
     --darkergreen: #89D98E;
     --darkeryellow: #EDED64;
-    /* --bs-primary */
 }
 
 body {
     background: var(--gray);
 }
 
+
+img {
+    max-width: 100%;
+    height: 0 auto;
+}
+
 /* button-primary overwrite */
-.btn-primary {
+.btn-dark {
     background: var(--green);
     border: none;
 }
@@ -26,6 +31,15 @@ body {
     margin: 0.5rem;
 }
 
+/* banner img styling */
+#intro {
+    background: url(../images/bg-shapes.png) no-repeat top center fixed;
+    background-size: 100%;
+    max-width: 100%;
+}
+
+
+/* card styling */
 .card-img-top {
     width: 100%;
     object-fit: cover;
@@ -38,7 +52,6 @@ body {
     background: #fff;
     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
-    /* padding: 14px 80px 18px 36px; */
     cursor: pointer;
 }
 
@@ -47,29 +60,17 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
 
-
-
-
 .card-body {
-    /* height: 10rem; */
     border-top: 1px solid var(--gray);
     height: 12rem;
 }
 
 
-
-#intro {
-    background: url(../images/bg-shapes.png) no-repeat top center fixed;
-    background-size: cover;
-    max-width: 100%;
-}
-
-
-
 .my-photo {
-    max-width: 80%;
+    width: 80%;
 }
 
+/* border for about section */
 .about-me {
     border-top: solid 6px var(--yellow);
 }
@@ -96,5 +97,4 @@ textarea {
 .contact-icon {
     width: 100px;
     padding: 0.5rem;
-
 }

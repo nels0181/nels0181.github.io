@@ -26,7 +26,7 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: var(--gray);">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo-v3-yellow-rd.svg" alt="logo" width="60" height="48"
@@ -38,7 +38,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#about">About</a>
                         </li>
@@ -51,6 +51,7 @@
                                 Contact
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <!-- resume link will be a link to pdf -->
                                 <li><a class="dropdown-item" href="#">Resume</a></li>
                             </ul>
                         </li>
@@ -63,7 +64,7 @@
             <div class="full-bg-img p-5 text-center">
                 <div class="container">
                     <h1 class="p-5">Clean designs for the best user experience</h1>
-                    <a class="btn btn-primary" href="#" role="button">See my work</a>
+                    <a class="btn btn-dark" href="#projects" role="button">See my work</a>
                 </div>
             </div>
         </div>
@@ -193,7 +194,7 @@
                                 <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <button type="submit" class="btn btn-outline-dark">Send</button>
                         </form>
                     </div>
                 </div>
